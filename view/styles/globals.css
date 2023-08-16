@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+
+}
+
+a {
+  color: inherit ;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+	font-family: Raleway, sans-serif !important;
+  padding-left: 0;
+  padding-right: 0;
+  
+}
+
+.activeClassName{
+  font-weight: bold;
+  border-bottom: 2px solid #ff5823;
+}
+
+.btn {
+  border-radius: 50px !important;
+  padding: 14px !important;
+  width: 130px !important;
+  cursor: pointer !important;
+  transition: 0.2s !important;
+  font-family: "Poppins SemiBold";
+  margin-right: 10px !important;
+}
+
+.btn:active {
+  transform: translateY(2px) !important;
+}
+
+.primary-btn {
+  color: var(--white) !important;
+  border: 2px solid linen !important;
+  font-size: 14px !important;
+  background-color: #1f2235 !important;
+}
+/* @media only screen and (max-width: 414px) {
+  .primary-btn {
+    font-size: 13px;
+  }
+} */
+
+.primary-btn:hover {
+  color: aliceblue !important;
+  border: 2px solid #ff5823 !important; 
+  background-color: #1f2235 !important;
+
+}
+
+.highlighted-btn {
+  color: var(--white) !important;
+  border: 2px solid linen !important;
+  background-color: #ff5823 !important;
+  font-size: 14px !important;
+}
+
+.highlighted-btn:hover{
+  color: aliceblue !important;
+  border: 2px solid #ff5823 !important; 
+  background-color: #1f2235 !important;
+}
+
+
+.red-border {
+  border: 1px solid var(--error-message) !important;
+}
+
+.fade-in {
+  opacity: 0 !important;
+  transform: translateY(80px) !important;
+  transition: all 0.8s ease !important;
+}
+
+
+
+
+

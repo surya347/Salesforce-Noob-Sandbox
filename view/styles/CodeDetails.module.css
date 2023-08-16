@@ -1,0 +1,118 @@
+.youtubve_video{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.sweet_loading{
+    position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+       
+   }
+
+.recommendation_div{
+    padding-top: 8rem;
+}
+
+.code_details_img_mobile{
+    display: none;
+}
+
+.code_details_img_screen{
+    padding-bottom: 100px;
+
+}
+
+.code_details_img_screen img{
+    width: 72vw;
+    height: 80vh;
+}
+
+.big_card_code{
+    background-color: #fff;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    width: 100%;
+    /* max-width: 600; */
+    border-radius: 10px;
+    box-shadow: 0 5px 10px grey;
+
+}
+
+.codeDetail_div{
+    margin-bottom: 50px;
+}
+
+.code_info{
+    margin-bottom: 50px;
+}
+
+.code_details{
+    margin-top: 50px;
+    
+}
+
+.code_details_card{
+    width: 100%;
+    max-width: 400px;
+}
+
+
+/* mobile view */
+@media only screen and (max-width:508px){
+   
+    
+    .code_details_img_screen img{
+        width: 135vw !important;
+        height: 50vh;
+    }
+
+    
+    .big_card_code{
+        width: 500px !important;
+    } 
+
+    .code_details_card{
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .codeDetail_div{
+        padding-left: 22px;
+    }
+
+    .youtubve_video{
+        width: 140% !important;
+    }
+
+    .footer_section{
+        width: 137% !important;
+    }
+
+}
+
+@media only screen and (max-width:820px){
+
+    .code_details_img_screen img{
+        width: 65vw;
+        height: 40vh;
+    }   
+
+    .big_card_code{
+        width: 500px !important;
+    } 
+
+    .code_details_card{
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .codeDetail_div{
+        padding-left: 22px;
+    }
+
+}

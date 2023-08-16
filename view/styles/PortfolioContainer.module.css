@@ -1,0 +1,259 @@
+.profile_container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 10%;
+    min-height: fit-content;
+
+}
+
+.home_container{
+    padding-top: 2rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 500px;
+    /* background-color:  #16325c; */
+    background-image: url('/blue2.png');
+    background-repeat: no-repeat !important;
+    width: auto;
+    height: auto;
+}
+
+.profile_parent{
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+}
+
+
+.profile_detail_name{
+    font-size: 24px;
+    font-family:'Poppins SemiBold';
+}
+
+.profile_detail_role{
+    display: flex;
+    flex-direction: column;
+    margin: 14px 0 24px 0;
+    
+}
+
+.profile_detail_role h1{
+    font-size: 40px;
+    font-family: cursive;
+}
+
+.primary_text{
+    color: aliceblue;
+}
+
+.highlighted_text{
+    color: #ff5823;
+}
+
+.profile_role_tagline{
+    font-size: 19px;
+    margin: 5px 0 0 0;
+    font-family: 'Poppins Light';
+}
+
+.profile_options .highlighted_btn{
+    margin: 0 0 0 28px;
+}
+
+.profile_options .highlighted_btn:hover{
+    margin: 0 0 0 28px;
+    background-color: cornsilk !important;
+    color: black;
+}
+
+.profile_picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 0px 0px aliceblue;
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin: 0 0px 0 100px;
+}
+
+.profile_pic_background{
+    height: 92%;
+    width: 92%;
+    background-image: url(/Sf_noob_logo.png);
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.profile_pic_background:hover{
+    transform: scale(1.07);
+    transition: 1s ease-out;
+}
+
+.colz .colz_icon{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.colz .colz_icon a{
+    color: white;
+    /* padding: 8px; */
+    padding-left: 0px;
+}
+
+.icons_div{
+    margin: 3px;
+}
+
+.colz .colz_icon i:hover{
+    transform: scale(1.5);
+}
+
+@media screen and (max-width:1110px) {
+    .profile_picture{
+        margin: 0 0px 0 80px;
+    }
+
+    .profile_detail_name{
+        font-size: 20px;
+    }
+
+    .profile_detail_role .primary_text{
+        font-size: 12px;
+    }
+
+    .profile_options .btn{
+        width: 120px;
+        padding: 11px 0;
+        z-index: 700;
+    }
+}
+
+@media screen and (max-width:910px) {
+    .profile_picture{
+        height: 320px;
+        width: 320px;
+        margin: 0 0 0 4px;
+    }
+}
+
+@media screen and (max-width:810px) {
+    .profile_picture{
+        height: 320px;
+        width: 320px;
+        margin: 0 !important;
+    }
+    .profile_parent{
+        flex-direction: column-reverse;
+        margin: 40px 0 0 0;
+    }
+
+    .profile_options{
+        display: flex;
+        justify-content:space-between;
+    }
+
+    .profile-details{
+        margin: 25px 0 0;
+    }
+
+    .profile_options .highlighted_btn{
+        margin: 0 !important;
+    }
+
+    .profile_options .profile_detail_role{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:500px) {
+ .profile_picture{
+     height: 275px;
+     width: 275px;
+     margin-top: -90px;
+ }
+
+ .profile_details{
+     width: 100%;
+ }
+
+ .profile_options {
+    display: flex;
+    justify-content:center !important;
+}
+
+}
+
+
+@media screen and (max-width:800px) {
+
+    .profile_pic_background{
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .profile_picture{
+        height: 275px;
+        width: 275px;
+        margin-top: -90px;
+    }
+   
+    .profile_details{
+        width: 100%;
+    }
+   
+    .profile_options {
+       display: flex;
+       justify-content:center !important;
+   }
+   
+
+}
+
+/* home footer section */
+.footer_container{
+    height: 17.8%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer_parent{
+    width: 100%;
+    height: 100%;
+    /* max-width: 1920px; */
+
+}
+
+.footer_parent img{
+    max-width: 100%;
+    height: 130px;
+
+}
+
+@media only screen and (max-width:1110px) {
+    
+    .footer_parent{
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    
+
+    .footer_parent img{
+       display: none !important;
+    }
+
+    .home_container{
+        padding-bottom: 20px !important;
+    }
+}
