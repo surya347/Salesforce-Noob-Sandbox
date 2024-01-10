@@ -12,6 +12,7 @@ import { PopularCards } from '../components/Home/PopularCards';
 import SourceCodeCard from '../components/Home/SourceCodeCard';
 import Head from 'next/head';
 import PopularBlogsCard from '../components/Home/PopularBlogsCard';
+import SupportIcon from '../components/supportIcon';
 
 export default function Index() {
   return (
@@ -25,11 +26,12 @@ export default function Index() {
     </Head>
     <Navbar/>
     <Header/>
+    <SupportIcon/>
     <PopularCards/>
     <PopularBlogsCard/>
     <SourceCodeCard/>
-
     <Footers />
+
     </>
   );
 }

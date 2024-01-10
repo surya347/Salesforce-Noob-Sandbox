@@ -9,8 +9,6 @@ import { servers } from "../config/index";
 import Head from 'next/head';
 
 
-
-
 // To Set From Loacal Storage
 const getLocalItems = () =>{ 
   if (typeof window !== 'undefined') {

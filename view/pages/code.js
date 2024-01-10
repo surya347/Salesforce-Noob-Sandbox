@@ -114,7 +114,6 @@ const index = () => {
             <div className="col-12 ">
               <div className="row code_card_div_source">
                 <FlipCard codeData={userData} />
- 
               </div>
             </div>
           </div>
