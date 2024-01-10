@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import { SiPhonepe, SiGooglepay, SiPaytm } from "react-icons/si";
 
-const SupportMe = () => {
+const SupportMe = (props) => {
   return (
     <>
       <div className="profile_card_box">

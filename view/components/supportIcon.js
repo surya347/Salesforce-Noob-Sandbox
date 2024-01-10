@@ -1,10 +1,17 @@
-import React from 'react'
+import React from 'react';
+import GenericModal from './GenericModal';
 
 const supportIcon = () => {
+const [open, setOpen] = React.useState(false);
+const handleOpen = () => setOpen(true);
+
   return (
+    
     <>
     <div className=''>
-        <button className="glow-on-hover" type="button">Support Us</button>
+        
+        <button className="glow-on-hover" type="button" onClick={handleOpen}>Support Us</button>
+        <GenericModal show={open} close={() => setOpen(false)}/>
     </div>
     <style jsx>
         {`
@@ -19,7 +26,7 @@ const supportIcon = () => {
                 right: 5vh;
                 border: 1px solid #cc0000;
                 position: fixed;
-                width: 220px;
+                width: 150px;
                 height: 50px;
                 outline: none;
                 color: #fff;
