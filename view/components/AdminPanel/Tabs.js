@@ -9,6 +9,7 @@ import AddCode from '../SourceCodeUpload/AddCode';
 import AddRecommend from '../SourceCodeUpload/AddRecommend';
 import AddInterviewQuestions from '../SourceCodeUpload/AddInterviewQuestions';
 import AddBlogs from '../SourceCodeUpload/AddBlogs';
+import AddCourse  from '../SourceCodeUpload/AddCourse';
 // import AddCode from '../../components/RelatedPost';
 // import AddRecommend from '../../components/RecommendationList'; 
 import Code from '../../pages/code';  
@@ -35,6 +36,7 @@ export default function Tabs(props) {
               <Tab label="Add Recommendation" value="4" />
               <Tab label="Add Questions" value="5" />
               <Tab label="Add Blogs" value="6" />
+              <Tab label="Add Course" value="7" />
 
             </TabList>
           </Box>
@@ -44,6 +46,7 @@ export default function Tabs(props) {
           <TabPanel value="4"><AddRecommend/></TabPanel>
           <TabPanel value="5"><AddInterviewQuestions/></TabPanel>
           <TabPanel value="6"><AddBlogs/></TabPanel>
+          <TabPanel value="7"><AddCourse/></TabPanel>
         </TabContext>
       </Box>
       </div>

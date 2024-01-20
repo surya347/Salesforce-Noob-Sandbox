@@ -13,6 +13,7 @@ const RecommendationCode = require('../model/recommendationSchema');
 const InterviewQuestionsCode = require('../model/interviewQuestionsSchema');
 const adminAuthenticateForDataPost = require('../middleware/adminAuthenticateForDataPost');
 const BlogsCode = require('../model/blogsSchema');
+const CoursesCode = require('../model/courseSchema');
 
 
 
@@ -293,6 +294,24 @@ router.post("/registers", async (req, res) => {
     }
    
     }) 
+
+    // ------Courses code Routing
+
+  router.post("/addcourses_for_noobade",adminAuthenticateForDataPost, async (req,res)=>{
+
+    const { playlistHeader,playlistImageLink,playlistYoutubeLink,header,headerApi,imageLink,videoLink,otherLink,writtenByName,writtenByDetails,seoKeywords,videoOrder } = req.body;
+
+    const code = new CoursesCode({playlistHeader,playlistImageLink,playlistYoutubeLink,header,headerApi,imageLink,videoLink,otherLink,writtenByName,writtenByDetails,seoKeywords,videoOrder });
+
+    /**--saving data of user in DB via User form--- */
+    const addCourse = await code.save();
+    if (addCourse) {
+    res.status(201).json({ message: "course added successfull" });
+    } else {
+    res.status(500).json({ error: "Failed to upload course" });
+    }
+
+  })
   
 
     //---Interview Questions list routing

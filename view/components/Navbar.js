@@ -65,6 +65,9 @@ import { useRouter } from "next/router";
         <MenuItem onClick={closeMobileMenu} component={NavLink} href="/profile">
           MyProfile
         </MenuItem>
+        <MenuItem onClick={closeMobileMenu} component={NavLink} href="/courses">
+          Courses
+        </MenuItem>
         <MenuItem onClick={closeMobileMenu} component={NavLink} href="/blogs">
           Blogs
         </MenuItem>
@@ -103,10 +106,15 @@ import { useRouter } from "next/router";
               </NavLink>
             </li>
             <li className={navStyles.nav_item}>
+              <NavLink className={navStyles.nav_link} href="/courses">
+                Courses{" "}
+              </NavLink>
+            </li>
+            <li className={navStyles.nav_item}>
                       <NavLink className={navStyles.nav_link} href="/blogs">
                         Blogs{" "}
                       </NavLink>
-                    </li>
+             </li>
             <li className={navStyles.nav_item}>
               <NavLink className={navStyles.nav_link} href="/code">
                 Codes{" "}
@@ -137,6 +145,11 @@ import { useRouter } from "next/router";
                        Dashboard 
                       </NavLink>
                     </li> */}
+                    <li className={navStyles.nav_item}>
+                      <NavLink className={navStyles.nav_link} href="/courses">
+                        Courses{" "}
+                      </NavLink>
+                    </li>
                     <li className={navStyles.nav_item}>
                       <NavLink className={navStyles.nav_link} href="/blogs">
                         Blogs{" "}
